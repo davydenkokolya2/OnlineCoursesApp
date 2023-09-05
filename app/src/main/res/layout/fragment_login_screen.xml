@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ui.login_screen.LoginScreenFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_background_login_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivStudentFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/icon_false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ivGetStarted"
+        app:layout_constraintEnd_toStartOf="@+id/ivTeacherFalse"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivTeacherFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/icon_false"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/ivGetStarted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStudentFalse" />
+
+    <ImageView
+        android:id="@+id/ivGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/icon_button_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitleLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/choose_your_role"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/ivStudentTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_true"
+        app:layout_constraintBottom_toBottomOf="@+id/ivStudentFalse"
+        app:layout_constraintStart_toStartOf="@+id/ivStudentFalse"
+        app:layout_constraintTop_toTopOf="@+id/ivStudentFalse" />
+
+    <ImageView
+        android:id="@+id/ivTeacherTrue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_true"
+        app:layout_constraintBottom_toBottomOf="@+id/ivTeacherFalse"
+        app:layout_constraintEnd_toEndOf="@+id/ivTeacherFalse"
+        app:layout_constraintTop_toTopOf="@+id/ivTeacherFalse" />
+
+    <TextView
+        android:id="@+id/tvTextLogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/inter"
+        android:gravity="center"
+        android:text="@string/by_choosing_a_role_you_will_find_it_easier_to_get_the_part_that_should_have_that_role"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/ivStudentFalse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleLogin" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/get_started"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/ivGetStarted"
+        app:layout_constraintEnd_toEndOf="@+id/ivGetStarted"
+        app:layout_constraintStart_toStartOf="@+id/ivGetStarted"
+        app:layout_constraintTop_toTopOf="@+id/ivGetStarted" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/student"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivStudentFalse"
+        app:layout_constraintEnd_toEndOf="@+id/ivStudentFalse"
+        app:layout_constraintStart_toStartOf="@+id/ivStudentFalse" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/teacher"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ivStudentFalse"
+        app:layout_constraintEnd_toEndOf="@+id/ivTeacherFalse"
+        app:layout_constraintStart_toStartOf="@+id/ivTeacherFalse" />
+</androidx.constraintlayout.widget.ConstraintLayout>

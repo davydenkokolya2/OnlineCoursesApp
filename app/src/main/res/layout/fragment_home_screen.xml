@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home_screen.HomeScreenFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_button_home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/online_courses"
+        android:textColor="@color/purple"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/categories"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/tvTitleCourseCard1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCard1"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard1"
+        app:layout_constraintStart_toStartOf="@+id/btnCard1"
+        app:layout_constraintTop_toBottomOf="@+id/ivLevelCard1" />
+
+    <TextView
+        android:id="@+id/tvTitleCourseCard3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCard3"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard1"
+        app:layout_constraintStart_toStartOf="@+id/btnCard1"
+        app:layout_constraintTop_toBottomOf="@+id/ivLevelCard3" />
+
+    <TextView
+        android:id="@+id/tvLevelCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLevelCard1"
+        app:layout_constraintEnd_toEndOf="@+id/ivLevelCard1"
+        app:layout_constraintStart_toStartOf="@+id/ivLevelCard1"
+        app:layout_constraintTop_toTopOf="@+id/ivLevelCard1" />
+
+    <TextView
+        android:id="@+id/tvLevelCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLevelCard3"
+        app:layout_constraintEnd_toEndOf="@+id/ivLevelCard1"
+        app:layout_constraintStart_toStartOf="@+id/ivLevelCard1"
+        app:layout_constraintTop_toTopOf="@+id/ivLevelCard3" />
+
+    <TextView
+        android:id="@+id/tvLevelCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLevelCard4"
+        app:layout_constraintEnd_toEndOf="@+id/ivLevelCard4"
+        app:layout_constraintStart_toStartOf="@+id/ivLevelCard4"
+        app:layout_constraintTop_toTopOf="@+id/ivLevelCard4" />
+
+    <TextView
+        android:id="@+id/tvLevelCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="12sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivLevelCard1"
+        app:layout_constraintEnd_toEndOf="@+id/ivLevelCard2"
+        app:layout_constraintStart_toStartOf="@+id/ivLevelCard2"
+        app:layout_constraintTop_toTopOf="@+id/ivLevelCard1" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCategoriesCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:src="@drawable/icon_grey_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivCategoriesCard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/icon_grey_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCategoriesCard1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ivCategoriesCard3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/icon_grey_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCategoriesCard2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivCategoriesCard4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/icon_grey_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCategoriesCard3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivCategoriesCard5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:src="@drawable/icon_grey_rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivCategoriesCard4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvCategoriesCard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategoriesCard1"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategoriesCard1"
+                app:layout_constraintStart_toStartOf="@+id/ivCategoriesCard1"
+                app:layout_constraintTop_toTopOf="@+id/ivCategoriesCard1" />
+
+            <TextView
+                android:id="@+id/tvCategoriesCard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategoriesCard1"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategoriesCard2"
+                app:layout_constraintStart_toStartOf="@+id/ivCategoriesCard2"
+                app:layout_constraintTop_toTopOf="@+id/ivCategoriesCard1" />
+
+            <TextView
+                android:id="@+id/tvCategoriesCard3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategoriesCard1"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategoriesCard3"
+                app:layout_constraintStart_toStartOf="@+id/ivCategoriesCard3"
+                app:layout_constraintTop_toTopOf="@+id/ivCategoriesCard1" />
+
+            <TextView
+                android:id="@+id/tvCategoriesCard4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategoriesCard1"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategoriesCard4"
+                app:layout_constraintStart_toStartOf="@+id/ivCategoriesCard4"
+                app:layout_constraintTop_toTopOf="@+id/ivCategoriesCard1" />
+
+            <TextView
+                android:id="@+id/tvCategoriesCard5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview"
+                app:layout_constraintBottom_toBottomOf="@+id/ivCategoriesCard1"
+                app:layout_constraintEnd_toEndOf="@+id/ivCategoriesCard5"
+                app:layout_constraintStart_toStartOf="@+id/ivCategoriesCard5"
+                app:layout_constraintTop_toTopOf="@+id/ivCategoriesCard1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/btnCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icon_background_card_course"
+        app:layout_constraintEnd_toStartOf="@+id/btnCard2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/btnCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icon_background_card_course"
+        app:layout_constraintEnd_toStartOf="@+id/btnCard4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCard1" />
+
+    <ImageView
+        android:id="@+id/ivImageCategoriesCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_computer"
+        app:layout_constraintStart_toStartOf="@+id/btnCard1"
+        app:layout_constraintTop_toTopOf="@+id/btnCard3" />
+
+    <ImageView
+        android:id="@+id/ivLevelCard3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_element_pink"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard1"
+        app:layout_constraintTop_toTopOf="@+id/btnCard3" />
+
+    <ImageView
+        android:id="@+id/btnCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:src="@drawable/icon_background_card_course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCard3"
+        app:layout_constraintTop_toTopOf="@+id/btnCard3" />
+
+    <ImageView
+        android:id="@+id/ivImageCategoriesCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_computer"
+        app:layout_constraintStart_toStartOf="@+id/btnCard2"
+        app:layout_constraintTop_toTopOf="@+id/btnCard4" />
+
+    <ImageView
+        android:id="@+id/ivLevelCard4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_element_pink"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard4"
+        app:layout_constraintTop_toTopOf="@+id/btnCard4" />
+
+    <ImageView
+        android:id="@+id/btnCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:src="@drawable/icon_background_card_course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnCard1"
+        app:layout_constraintTop_toTopOf="@+id/btnCard1" />
+
+    <TextView
+        android:id="@+id/tvTitleCourseCard2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCard1"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCard2"
+        app:layout_constraintTop_toBottomOf="@+id/ivLevelCard1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvTitleCourseCard4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="@string/courses"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCard4"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCard2"
+        app:layout_constraintTop_toBottomOf="@+id/ivLevelCard4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivLevelCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_element_pink"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard2"
+        app:layout_constraintTop_toTopOf="@+id/btnCard1" />
+
+    <ImageView
+        android:id="@+id/ivLevelCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_element_pink"
+        app:layout_constraintEnd_toEndOf="@+id/btnCard1"
+        app:layout_constraintTop_toTopOf="@+id/btnCard1" />
+
+    <ImageView
+        android:id="@+id/ivImageCategoriesCard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_computer"
+        app:layout_constraintStart_toStartOf="@+id/btnCard2"
+        app:layout_constraintTop_toTopOf="@+id/btnCard1" />
+
+    <ImageView
+        android:id="@+id/ivImageCategoriesCard1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/icon_computer"
+        app:layout_constraintStart_toStartOf="@+id/btnCard1"
+        app:layout_constraintTop_toTopOf="@+id/btnCard1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
